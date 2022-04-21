@@ -1,0 +1,29 @@
+p{
+    color: bisque;
+}
+body{
+
+}
+#hui{
+    flex: 1 1 auto;
+}
+.list{
+    list-style: none;
+    counter-reset: list;
+    display: flex;
+    gap: 15px;
+}
+.list li{
+    display: flex;
+    gap: 10px;
+    background: red;
+    align-items: center;
+}
+
+.list li:before{
+    display: block;
+    font-size: 50px;
+    counter-increment: list;
+    content:counter(list);
+
+}
